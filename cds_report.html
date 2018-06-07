@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sample CDS report using CDSx</title>
+
+    <script type="text/javascript" language="javascript">
+
+var current_version = '0.1';
+
+fetch('cdsx_questions.json')
+  .then(function(response) {
+
+    return response.json();
+
+  })
+  .then(function(myJson) {
+
+    var report = ""
+    var cur_id = ""
+
+    function parse_obj(obj){
+
+      for (var property in obj) {
+
+        if (typeof obj[property] === 'object') {
+
+            if (property == 'result-segments') {
+                    report += ">>> result segments >>>" + obj[property] +  "<br>";
+              } else {
+                parse_obj(obj[property]);
+              }
+
+        } else {
+
+            if (property == 'apiVersion') {
+                if (obj[property] !== current_version) {
+                    alert('API');
+                    report = 'API version incompatibility.';
+                    break;
+                }
+            }else if ( property == 'id') {
+                cur_id = obj[property];
+            } else if (property == 'title' || property == 'id'){
+                report += "<h2 class='header'>" + obj[property] + "</h2>";
+            } else {
+                //if it's a question, get the answer
+                report += obj[property] + " (get_answer(" + cur_id + property + "))<br>";
+            }
+       }
+    }
+
+
+    };
+
+
+    parse_obj(myJson);
+
+    document.getElementById('report').innerHTML = report;
+
+  });
+
+    </script>
+</head>
+<body>
+<div id="container">
+    <div id="header">
+        <h1>CDSx Report example.</h1>
+    </div>
+    <div id="report">
+
+
+    </div>
+
+
+</div>
+</body>
+</html>
