@@ -15,10 +15,9 @@ This is also a learning tool by an occasional programmer. Feedback and
 constructive criticism are welcome.
 
 ## Usage
-cdsx_questions.json 		- question template<br>
-cdsx_answers_sample.json 	- example answer template<br>
-cds_report.htm 				- consumes questions & answers, presenting report<br>
-							automatically 
+*cdsx_questions.json* - question template<br>
+*cdsx_answers_sample.json* - example answer template<br>
+*cds_report.htm* - consumes questions & answers, presenting report	automatically<br>
 
 ## Versioning / Upcoming Changes
 
@@ -26,10 +25,7 @@ Still fleshing out proof-of-concept. Style will come after function.
 
 ## Contact
 
-Tom Mahoney
-
-Institutional Research and Business Intelligence Analyst
-
-Pennsylvania College of Technology
-
-tcm16@pct.edu
+Tom Mahoney<br>
+Institutional Research and Business Intelligence Analyst<br>
+Pennsylvania College of Technology<br>
+tcm16@pct.edu<br>
