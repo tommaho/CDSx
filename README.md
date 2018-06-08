@@ -15,9 +15,9 @@ This is also a learning tool by an occasional programmer. Feedback and
 constructive criticism are welcome.
 
 ## Usage
-cdsx_questions.json 		- question template
-cdsx_answers_sample.json 	- example answer template
-cds_report.htm 				- consumes questions & answers, presenting report
+cdsx_questions.json 		- question template<br>
+cdsx_answers_sample.json 	- example answer template<br>
+cds_report.htm 				- consumes questions & answers, presenting report<br>
 							automatically 
 
 ## Versioning / Upcoming Changes
