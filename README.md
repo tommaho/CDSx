@@ -26,7 +26,8 @@ objects. They could be sourced as easily from an api or remote files.
 
 ## Versioning / Upcoming Changes
 
-Still fleshing out proof-of-concept. Style will come after function. 
+Still fleshing out proof-of-concept. Style will come after function. Then maybe
+visualizations.
 
 ## Contact
 
