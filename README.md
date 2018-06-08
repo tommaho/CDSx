@@ -11,13 +11,15 @@ This is an unofficial, internal-use tool that I'm sharing with others in the
 Institutional Research community. I have no formal ties to the Common Data
 Set Initiative.
 
+The official Common Data Set page can be found here: http://www.commondataset.org/
+
 This is also a learning tool by an occasional programmer. Feedback and
 constructive criticism are welcome.
 
 ## Usage
-*cdsx_questions.json* - question template<br>
-*cdsx_answers_sample.json* - example answer template<br>
-*cds_report.htm* - consumes questions & answers, presenting report	automatically<br>
+**cdsx_questions.json** - question template<br>
+**cdsx_answers_sample.json** - example answer template<br>
+**cds_report.htm** - consumes questions & answers, presenting report	automatically<br>
 
 ## Versioning / Upcoming Changes
 
