@@ -17,9 +17,12 @@ This is also a learning tool by an occasional programmer. Feedback and
 constructive criticism are welcome.
 
 ## Usage
-**cdsx_questions.json** - question template<br>
-**cdsx_answers_sample.json** - example answer template<br>
+**cdsx_questions.js** - question template<br>
+**cdsx_answers_sample.js** - example answer template<br>
 **cds_report.htm** - consumes questions & answers, presenting report	automatically<br>
+
+Note: questions and answers are shown here included from local files, as js
+objects. They could be sourced as easily from an api or remote files.
 
 ## Versioning / Upcoming Changes
 

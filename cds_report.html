@@ -3,64 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <title>Sample CDS report using CDSx</title>
+	<script type="text/javascript" language="javascript" src="cdsx_questions.js">
+	</script>
+    <script type="text/javascript" language="javascript" src="cdsx_answers_sample.js">
+	</script>
 
     <script type="text/javascript" language="javascript">
 
 var current_version = '0.1';
 
-fetch('cdsx_questions.json')
-  .then(function(response) {
+var report = ""
+var cur_id = ""
 
-    return response.json();
+function parse_obj(obj){
 
-  })
-  .then(function(myJson) {
+  for (var property in obj) {
 
-    var report = ""
-    var cur_id = ""
+    if (typeof obj[property] === 'object') {
 
-    function parse_obj(obj){
+        if (property == 'result-segments') {
+                report += ">>> result segments >>>" + obj[property] +  "<br>";
+          } else {
+            parse_obj(obj[property]);
+          }
 
-      for (var property in obj) {
+    } else {
 
-        if (typeof obj[property] === 'object') {
-
-            if (property == 'result-segments') {
-                    report += ">>> result segments >>>" + obj[property] +  "<br>";
-              } else {
-                parse_obj(obj[property]);
-              }
-
-        } else {
-
-            if (property == 'apiVersion') {
-                if (obj[property] !== current_version) {
-                    alert('API');
-                    report = 'API version incompatibility.';
-                    break;
-                }
-            }else if ( property == 'id') {
-                cur_id = obj[property];
-            } else if (property == 'title' || property == 'id'){
-                report += "<h2 class='header'>" + obj[property] + "</h2>";
-            } else {
-                //if it's a question, get the answer
-                report += obj[property] + " (get_answer(" + cur_id + property + "))<br>";
+        if (property == 'apiVersion') {
+            if (obj[property] !== current_version) {
+                alert('API');
+                report = 'API version incompatibility.';
+                break;
             }
-       }
-    }
+        }else if ( property == 'id') {
+            cur_id = obj[property];
+        } else if (property == 'title' || property == 'id'){
+            report += "<h2 class='header'>" + obj[property] + "</h2>";
+        } else {
+            //if it's a question, get the answer
+            report += obj[property] + " <em>" + get_answer(cur_id + property) + "</em> <br>";
+        }
+   }
+}
+};
 
+function get_answer(qid) {
+    probe = answers[qid];
+    if (typeof(probe) == 'undefined') {
+        return "";
+    } else {
+        return probe;
+     }
 
-    };
+};
 
-
-    parse_obj(myJson);
-
+window.onload = function () {
+    parse_obj(questions);
     document.getElementById('report').innerHTML = report;
+  };
 
-  });
 
-    </script>
+
+
+</script>
 </head>
 <body>
 <div id="container">
