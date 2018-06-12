@@ -9,26 +9,18 @@
 	</script>
 
     <script type="text/javascript" language="javascript">
-
 var current_version = '0.1';
-
 var report = ""
 var cur_id = ""
-
 function parse_obj(obj){
-
   for (var property in obj) {
-
     if (typeof obj[property] === 'object') {
-
         if (property == 'result-segments') {
                 report += ">>> result segments >>>" + obj[property] +  "<br>";
           } else {
             parse_obj(obj[property]);
           }
-
     } else {
-
         if (property == 'apiVersion') {
             if (obj[property] !== current_version) {
                 alert('API');
@@ -46,7 +38,6 @@ function parse_obj(obj){
    }
 }
 };
-
 function get_answer(qid) {
     probe = answers[qid];
     if (typeof(probe) == 'undefined') {
@@ -54,17 +45,11 @@ function get_answer(qid) {
     } else {
         return probe;
      }
-
 };
-
 window.onload = function () {
     parse_obj(questions);
     document.getElementById('report').innerHTML = report;
   };
-
-
-
-
 </script>
 </head>
 <body>
