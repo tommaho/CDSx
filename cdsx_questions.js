@@ -139,5 +139,109 @@ var questions = {
         }
       }
     }
-  }
+  },
+    "B2": {
+      "id": "B2",
+      "title": "Enrollment by Racial / Ethnic Category",
+      "text": "Provide numbers of undergraduate students for each of the following categories as of the institution's official fall reporting date or as of October 15, 2017. Include international students only in the category 'Nonresident aliens.' Complete the 'Total Undergraduates' column only if you cannot provide data for the first two columns. Report as your institution reports to IPEDS: persons who are Hispanic should be reported only on the Hispanic line, not under any race, and persons who are non-Hispanic multi-racial should be reported only under 'Two or more races.'",
+      "result-segments": [
+        "Degree-Seeking First-Time First-Year",
+        "Degree-Seeking Undergraduates (include first-time first-year)",
+        "Total Undergraduates (both degree- and non-degree-seeking)"
+      ],
+      "questions" : {
+        "q1": "Nonresident aliens",
+        "q2": "Hispanic or Latino",
+        "q3": "White",
+        "q4": "American Indian or Alaska native",
+        "q5": "Asian",
+        "q6": "Native Hawaiian or other Pacific Islander",
+        "q7": "Two or more races",
+        "q8": "Race and or ethnicity unknown",
+        "q9": "Total",
+      }
+  },
+  "B3": {
+    "id": "B3",
+    "title": "Persistence",
+    "text": "Number of degrees awarded from July 1, 2016 to June 30, 2017",
+
+    "questions" : {
+      "q1": "Certificates / diplomas",
+      "q2": "Associate degrees",
+      "q3": "Bachelor's Degrees",
+      "q4": "Postbachelor's certificates",
+      "q5": "Master's degrees",
+      "q6": "Post-Master's certificates",
+      "q7": "Doctoral degrees - research / scholarship",
+      "q8": "Doctoral degrees - professional practice",
+      "q9": "Doctoral degrees - other",
+    }
+},
+"B4": {
+  "id": "B4",
+  "title": "Graduation Rates - Bachelor's or Equivalent Institutions - Cohort 1",
+  "text": "In the following section for bachelor’s or equivalent programs, please disaggregate the Fall 2010 and Fall 2011 cohorts (formerly CDS B4-B11) into four groups: • Students who received a Federal Pell Grant*  • Recipients of a subsidized Stafford Loan who did not receive a Pell Grant • Students who did not receive either a Pell Grant or a subsidized Stafford Loan • Total (all students, regardless of Pell Grant or subsidized loan status) *Students who received both a Federal Pell Grant and a subsidized Stafford Loan should be reported in the ""Recipients of a Federal Pell Grant"" column. For each graduation rate grid below, the numbers in the first three columns for Questions A-G should sum to the cohort total in the fourth column (formerly CDS B4-B11).",
+  
+  "sections": {
+    "cohort 1": {
+      "section-text": "Cohort 1",
+
+        "result-segments": [
+          "Recipients of a Federal Pell Grant",
+          "Recipients of a Subsidized Stafford Loan who did not receive a Pell Grant",
+          "Students who did not receive either a Pell grant or a Subsidized Stafford Loan",
+          "Total"
+        ],
+        "questions" : {
+          "q1": "Initital cohort of first-time, full-time bachelor's (or equivalent) degree seeking undergraduate-students",
+          "q2": "Of the initial cohort, how many did not persist and did not graduate for the following reasons: deceased, permanently disabled, armed forces, foreign aid service of the federal government, or official church missions; total allowable exclusions",
+          "q3": "Final cohort, after adjusting for allowable exclusions",
+          "q4": "How many completed the program in four years or less",
+          "q5": "How many completed the program in more than four years but in five years or less",
+          "q6": "How many completed the program in more than five years but in six years or less",
+          "q7": "Total graduating within six years",
+          "q8": "Six-year graduation rate for cohort"
+        }
+      },
+
+      "section-text": "Cohort 2",
+
+      "result-segments": [
+        "Recipients of a Federal Pell Grant",
+        "Recipients of a Subsidized Stafford Loan who did not receive a Pell Grant",
+        "Students who did not receive either a Pell grant or a Subsidized Stafford Loan",
+        "Total"
+      ],
+      "questions" : {
+        "q9": "Initital cohort of first-time, full-time bachelor's (or equivalent) degree seeking undergraduate-students",
+        "q10": "Of the initial cohort, how many did not persist and did not graduate for the following reasons: deceased, permanently disabled, armed forces, foreign aid service of the federal government, or official church missions; total allowable exclusions",
+        "q11": "Final cohort, after adjusting for allowable exclusions",
+        "q12": "How many completed the program in four years or less",
+        "q13": "How many completed the program in more than four years but in five years or less",
+        "q14": "How many completed the program in more than five years but in six years or less",
+        "q15": "Total graduating within six years",
+        "q16": "Six-year graduation rate for cohort"
+      }
+    }
+
+  },
+
+  "C1": {
+    "id": "C1",
+    "title": "Applications",
+    "text": "First-time, first-year, (freshmen) students: Provide the number of degree-seeking, first-time, first-year students who applied, were admitted, and enrolled (full- or part-time) in Fall 2017. Include early decision, early action, and students who began studies during summer in this cohort. Applicants should include only those students who fulfilled the requirements for consideration for admission (i.e., who completed actionable applications) and who have been notified of one of the following actions: admission, nonadmission, placement on waiting list, or application withdrawn (by applicant or institution). Admitted applicants should include wait-listed students who were subsequently offered admission.",
+
+    "questions" : {
+      "q1": "Total first-time, first-year (freshman) men who applied",
+      "q2": "Total first-time, first-year (freshman) women who applied",
+      "q3": "Total first-time, first-year (freshman) men who were admitted",
+      "q4": "Total first-time, first-year (freshman) women who were admitted",
+      "q5": "Total full-time, first-time, first-year (freshman) men who enrolled",
+      "q6": "Total part-time, first-time, first-year (freshman) men who enrolled",
+      "q7": "Total full-time, first-time, first-year (freshman) women who enrolled",
+      "q8": "Total part-time, first-time, first-year (freshman) women who enrolled"
+    }
+},
+
 };
