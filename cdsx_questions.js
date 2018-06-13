@@ -152,13 +152,14 @@ var questions = {
       "questions" : {
         "q1": "Nonresident aliens",
         "q2": "Hispanic or Latino",
-        "q3": "White",
-        "q4": "American Indian or Alaska native",
-        "q5": "Asian",
-        "q6": "Native Hawaiian or other Pacific Islander",
-        "q7": "Two or more races",
-        "q8": "Race and or ethnicity unknown",
-        "q9": "Total",
+        "q3": "Black or African American",        
+        "q4": "White",
+        "q5": "American Indian or Alaska native",
+        "q6": "Asian",
+        "q7": "Native Hawaiian or other Pacific Islander",
+        "q8": "Two or more races",
+        "q9": "Race and or ethnicity unknown",
+        "q10": "Total",
       }
   },
   "B3": {
@@ -226,6 +227,17 @@ var questions = {
     }
 
   },
+
+  
+  "B22": {
+    "id": "B22",
+    "title": "Retention Rates",
+    "text": "Report for the cohort of all full-time, first-time bachelor’s (or equivalent) degree-seeking undergraduate students who entered in Fall 2016 (or the preceding summer term). The initial cohort may be adjusted for students who departed for the following reasons: death, permanent disability, service in the armed forces, foreign aid service of the federal government or official church missions. No other adjustments to the initial cohort should be made.",
+
+    "questions" : {
+      "q1": "For the cohort of all full-time bachelor’s (or equivalent) degree-seeking undergraduate students who entered your institution as freshmen in Fall 2016 (or the preceding summer term), what percentage was enrolled at your institution as of the date your institution calculates its official enrollment in Fall 2017?"
+    }
+},
 
   "C1": {
     "id": "C1",
