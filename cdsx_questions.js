@@ -182,7 +182,7 @@ var questions = {
 "B4": {
   "id": "B4",
   "title": "Graduation Rates - Bachelor's or Equivalent Institutions - Cohort 1",
-  "text": "In the following section for bachelor’s or equivalent programs, please disaggregate the Fall 2010 and Fall 2011 cohorts (formerly CDS B4-B11) into four groups: • Students who received a Federal Pell Grant*  • Recipients of a subsidized Stafford Loan who did not receive a Pell Grant • Students who did not receive either a Pell Grant or a subsidized Stafford Loan • Total (all students, regardless of Pell Grant or subsidized loan status) *Students who received both a Federal Pell Grant and a subsidized Stafford Loan should be reported in the ""Recipients of a Federal Pell Grant"" column. For each graduation rate grid below, the numbers in the first three columns for Questions A-G should sum to the cohort total in the fourth column (formerly CDS B4-B11).",
+  "text": "In the following section for bachelor’s or equivalent programs, please disaggregate the Fall 2010 and Fall 2011 cohorts (formerly CDS B4-B11) into four groups: • Students who received a Federal Pell Grant*  • Recipients of a subsidized Stafford Loan who did not receive a Pell Grant • Students who did not receive either a Pell Grant or a subsidized Stafford Loan • Total (all students, regardless of Pell Grant or subsidized loan status) *Students who received both a Federal Pell Grant and a subsidized Stafford Loan should be reported in the 'Recipients of a Federal Pell Grant' column. For each graduation rate grid below, the numbers in the first three columns for Questions A-G should sum to the cohort total in the fourth column (formerly CDS B4-B11).",
   
   "sections": {
     "cohort 1": {
@@ -254,6 +254,6 @@ var questions = {
       "q7": "Total full-time, first-time, first-year (freshman) women who enrolled",
       "q8": "Total part-time, first-time, first-year (freshman) women who enrolled"
     }
-},
+}
 
 };

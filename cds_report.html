@@ -6,7 +6,43 @@
 	<script type="text/javascript" language="javascript" src="cdsx_questions.js">
 	</script>
     <script type="text/javascript" language="javascript" src="cdsx_answers_sample.js">
-	</script>
+    </script>
+    <style>
+   
+    .question_header {
+        padding-top: 20px;
+        background-color:white;
+        
+        border-bottom-width: 2px;
+        border-bottom-color: gray;
+        border-bottom-style: solid;
+    }
+    .question_text {
+        width: 100%;
+
+    }
+    .questions {
+        width: 95%;
+        padding-left: 5%;
+        background-color:lightgrey;
+        border-bottom-width: 1px;
+        border-bottom-color:grey;
+        border-bottom-style:dashed;
+
+    }
+    .question {
+        width: 50%;
+        float:left;
+ 
+    }
+
+    .answer {
+        width: 50%;
+        float: right;
+
+
+    }
+    </style>
 
     <script type="text/javascript" language="javascript">
 var current_version = '0.1';
@@ -29,11 +65,18 @@ function parse_obj(obj){
             }
         }else if ( property == 'id') {
             cur_id = obj[property];
+
+
         } else if (property == 'title' || property == 'id'){
-            report += "<h2 class='header'>" + obj[property] + "</h2>";
+            report += "<div class='question_header'><h2>" + obj[property] + "</h2></div>";
+
+        } else if (property == 'text') {
+            report += "<div class='question_text'>" + obj[property] + "</div><br>";
+                
         } else {
             //if it's a question, get the answer
-            report += obj[property] + " <em>" + get_answer(cur_id + property) + "</em> <br>";
+            report += "<div class='questions'><span class='question'>" +  obj[property] + "</span><span class='answer'>" 
+                + get_answer(cur_id + property) + " </span> <br></div>";
         }
    }
 }
