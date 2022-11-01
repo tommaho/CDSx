@@ -1,3 +1,5 @@
+# Note: this is dead on the vine and won't be resurrected, but I'll leave it for posterity if anyone happens to be searching for CDS related stuff. 
+
 # CDSx
 
 ## Common Data Set Exchange
